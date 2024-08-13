@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --navbar-bg: #252b36;
+        }
+         *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Roboto,sans-serif;
+        }
+        .align-items-center {
+            -ms-flex-align: center !important;
+            align-items: center !important;
+        }
+        .d-inline-flex {
+            display: -ms-inline-flexbox !important;
+            display: inline-flex !important;
+        }
+        .ms-3 {
+            margin-left: 1.25rem !important;
+        }
+        .h-16px {
+            height: 1rem !important;
+        }
+        .navbar-brand img{
+            height: 22px;
+        }
+        .header{
+            background-color: var(--navbar-bg);
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            /* z-index: 1070; */
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+        .main-content-wrapper{
+            display: flex;
+            margin-top: 65px;
+        }
+        .sidebar{
+            background-color: #252b36;
+            min-width: 200px;
+            padding: 10px 0;
+        }
+        .sidebar ul{
+            list-style-type: none;
+        }
+        .sidebar ul li{
+            padding-bottom: 10px;
+        }
+        .sidebar ul li a{
+            color: #fff;
+            text-decoration: none;
+            padding : 10px 20px;
+            display: inline-block;
+            width: 100%;
+        }
+        .sidebar ul li a.active{
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+        .page-content{
+            padding: 20px; 
+            max-height: calc(100vh - 124px);
+            min-height: calc(100vh - 124px);
+            overflow: auto;
+            background-color: #f1f4f9;
+        }
+
+        .page-content p{
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+        .footer{
+            padding: 20px;
+        }
+        .footer{
+            background-color: #d94645;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+    
+    </style>
+</head>
+<body>
+                <div class="header navbar-brand">
+                    <a href="index.html" class="d-inline-flex align-items-center">
+                        <img src="https://themes.kopyov.com/limitless/demo/template/assets/images/logo_icon.svg" alt="">
+                        <img src="https://themes.kopyov.com/limitless/demo/template/assets/images/logo_text_light.svg" class="d-none d-sm-inline-block h-16px ms-3" alt="">
+                    </a>
+                </div>
+                <div class="main-content-wrapper">
+                    <div class="sidebar">
+                        <ul>
+                            <li><a href="#">Sidebar List Item 1</a></li>
+                            <li><a href="#" class="active">Sidebar List Item 2</a></li>
+                            <li><a href="#">Sidebar List Item 3</a></li>
+                            <li><a href="#">Sidebar List Item 4</a></li>
+                        </ul>
+                    </div>
+                    <div class="page-content-wrapper">
+                        <div class="page-content">
+                                <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque neque orci, varius nec massa nec, convallis gravida nulla. Nunc feugiat enim vel laoreet convallis. Vestibulum sed urna erat. Praesent semper eget massa tempus laoreet. Aliquam eget tempor tellus. Phasellus sem ante, pulvinar a ultrices sit amet, blandit et nulla. Vestibulum euismod, enim id sodales aliquam, elit ligula consectetur felis, at interdum felis mi sit amet ex. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque eget mi consectetur, elementum ipsum in, consectetur purus. Nullam pulvinar efficitur nisl, at tristique libero sollicitudin quis. Phasellus non massa nec sem lobortis finibus.
+                                </p>
+                                <p>
+                                Morbi imperdiet imperdiet nisl. Fusce ultricies vestibulum ex ut hendrerit. Aliquam accumsan lacus vitae eros interdum luctus. Suspendisse imperdiet diam felis, ac faucibus lorem aliquam non. In quam massa, dictum in volutpat sagittis, elementum vel ex. Aliquam et porttitor est. Vivamus dolor velit, sagittis malesuada urna ac, sollicitudin varius elit. Cras augue quam, consequat vel ligula ut, vehicula aliquam ligula. Aliquam erat volutpat. Vivamus in rutrum mauris. Mauris at accumsan ipsum. Duis nibh mauris, ornare nec congue in, ultrices quis lorem. Suspendisse vulputate felis sit amet elit mollis, quis vehicula nulla volutpat.
+                                </p>
+                        </div>
+                        <div class="footer">
+                            <p>Footer</p>
+                        </div>
+                    </div>
+                </div>
+            <!-- </div>
+        </div> -->
+</body>
+</html>
